@@ -1,15 +1,15 @@
-var mssql=require('mssql');
-var Schema=mssql.schema;
+var mssql = require('mssql');
+var Schema = mssql.schema;
 
 
-topicModel=new Schema({
-	id:number,
-	name:String,
-description:String,
-	subCategoryId:number,
-	isActive:boolean,
-	isDeleted:boolean,
-	createdOn:Date
+topicModel = new Schema({
+	id: number,
+	name: String,
+	description: String,
+	subCategoryId: number,
+	isActive: boolean,
+	isDeleted: boolean,
+	createdOn: Date
 })
 
-module.exports=topicModel;
+module.exports = topicModel;
