@@ -27,7 +27,7 @@ var subCategoryRepo={
                                       _.forEach(resp[0],(subCategoryValues,subCategoryIndex)=>{
                                         // to check sub category has further sub topics or not.
                                         
-                                        var query_subTopics="select * from SubTopics where SubCategoryId="+subCategoryValues.Id+"";
+                                        var query_subTopics="select * from SubTopics where SubCategoryId="+subCategoryValues.Id+" and IsDeleted=0 and IsActive=1";
                                         baseRepo.executeQuery(query_subTopics,function (subTopics_err, subTopics_resp) {
                                           if(err)
                                           {
