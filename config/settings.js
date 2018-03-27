@@ -9,9 +9,9 @@
 
 
 exports.dbConfig = {
-    user:  'rahman@fiberfox1',
+    user:  'rahman@fiberfox',
     password: 'fiberfox_123',
-    server: 'fiberfox1.database.windows.net',
+    server: 'fiberfox.database.windows.net',
     database:'Fiberfox_Db',
     port:1433,
     options: {
